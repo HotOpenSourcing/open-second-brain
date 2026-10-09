@@ -1,7 +1,6 @@
 # OS/editor noise
 .DS_Store
 .idea/
-.vscode/
 *.swp
 
 # Python
@@ -17,8 +16,6 @@ node_modules/
 .bun/
 
 # Local config and sandbox data
-.env
-.env.*
 !.env.example
 .open-second-brain.local.yaml
 sandbox-vault/
@@ -45,3 +42,4 @@ sandbox-vault/
 
 # Personal editor ignore files (ZCode and similar): per-machine, never committed.
 .zcodeignore
+config.bat

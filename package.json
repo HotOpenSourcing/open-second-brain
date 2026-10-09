@@ -1,6 +1,6 @@
 {
   "name": "open-second-brain",
-  "version": "1.77.0",
+  "version": "1.78.0",
   "private": false,
   "description": "Second brain for AI agents using Obsidian-compatible Markdown vaults. Works with Hermes, Claude Code, Codex, and OpenClaw.",
   "keywords": [
@@ -35,7 +35,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build:openclaw": "bun build src/openclaw/index.ts --outfile openclaw/index.js --target=node --format=esm --external openclaw/plugin-sdk/plugin-entry",
+    "build:openclaw": "node init && bun build src/openclaw/index.ts --outfile openclaw/index.js --target=node --format=esm --external openclaw/plugin-sdk/plugin-entry",
     "test": "bash scripts/test",
     "lint": "oxlint -c oxlint.json",
     "lint:fix": "oxlint -c oxlint.json --fix",
